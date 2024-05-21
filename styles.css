@@ -1,0 +1,265 @@
+/* 전체 */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Pretendard;
+}
+header{
+    padding: 0 320px ;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+ul{
+    list-style-type: none;
+}
+/* header */
+header{
+    background-color: #F2E9D8;
+    height: 868px;
+}
+header h1,h2{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+header button{
+    margin-top: 26px;
+    width: 140px;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    background-color: #D97652;
+    color: #FFFFFF;
+}
+header .top{
+    display: flex;
+    justify-content: space-between;
+}
+header .top img{
+    margin-top: 31px;
+}
+header .top nav{
+    display: flex;
+    justify-content: space-between;
+    height: 102px;
+}
+header .top nav ul{
+    width: 205px;
+    display: flex;
+    justify-content: space-between;
+    margin: 41px 49px 0 0;
+}
+/* header - section*/
+header section{
+    display: flex;
+    justify-content: space-between;
+}
+header section .header_text{
+    margin-top: 200px;
+}
+header section .header_text .main_text{
+    font-size: 48px;
+    width: 659px;
+    height: 120px;
+    white-space: pre-line;
+}
+header section .header_text .sub_text{
+    font-size: 16px;
+    width: 550px;
+    height: 80px;
+    white-space: pre-line;
+}
+header section .header_text button{
+    margin-top: 40px;
+}
+header section img{
+    width: 415px;
+    height: 766px;
+}
+
+
+/* main */
+/* 메인 섹션1 */
+main{
+    padding: 80px 322px 181px 320px;
+}
+main .top_sec{
+    display: flex;
+    gap: 110px;
+}
+main .top_sec img{
+    width: 660px;
+    height: 390px;
+}
+main .top_sec div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+main .top_sec div .main_text{
+    white-space: pre-line;
+    width: 510px;
+    font-size: 36px;
+}
+main .top_sec div .sub_text{
+    white-space: pre-line;
+    width: 510px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+/* 고양이사진 리스트 */
+main .list_sec .main_text{
+    font-size: 48px;
+    text-align: center;
+    color: #D97652;
+    margin: 120px 0 80px;
+}
+main .list_sec .sub_text{
+    margin-top: 40px;
+    text-align: center;
+    white-space: pre-line;
+}
+main .list_sec .sub_text span{
+    color: #D97652;
+}
+main .list_sec  ul{
+    width: 1300px;
+    height: 828px;
+    margin: 88px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+main .list_sec img{
+    width: 378px;
+    height: 378px;
+}
+main .list_sec .show_more{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 495px 0;
+    align-items: center;
+}
+main .list_sec #button{
+    border-radius: 40px;
+    background-color: #D97652;
+    color: #F2E9D8;
+    border: none;
+    width: 143px;
+    height: 50px;
+    margin-top: 28px;
+}
+main .list_sec hr{
+    height: 1px;
+    width: 1300px;
+    margin: 80px 0 68px;
+    color: #C4C4C4;
+}
+/* 카카오맵 */
+
+main .map_sec h3{
+    font-size: 43px;
+    padding-bottom: 20px;
+}
+main #map{
+    margin-top: 48px;
+    width: 1300px;
+    height: 520px;
+    border-radius: 12px;
+}
+/* 모달창 생성 영역*/
+article{
+    position: relative;
+    padding: 0 58px;
+    margin: 0 320px;
+    top: 100px;
+    background-color: #263140;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+.modal{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px 0 51px;
+}
+.modal .main_text{
+    font-size: 36px;
+    font-weight: 700;
+    white-space: pre-line;
+    color: #FFFFFF;
+}
+.modal .sub_text{
+    font-size: 14px;
+    white-space: pre-line;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-top: 18px;
+}
+.modal_btn{
+    display: inline-block;
+    margin: 69px 0 71px;
+}
+#email{
+    padding: 0 136px 0 58px;
+    width: 332px;
+    height: 60px;
+    border-radius: 60px;
+    color: #767676;
+}
+.modal_btn img{
+    position: relative;
+    left: 52px;
+    top: 8px;
+    width: 24px;
+    height: 24px;
+}
+.modal_btn button{
+    position: relative;
+    right: 144px;
+    padding: 15px 29px;
+    width: 135px;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    background-color: #D97652;
+    color: #FFFFFF;
+}
+/* footer */
+footer{
+    z-index: 1;
+    position: absolute;
+}
+footer img{
+    width: 1940px;
+    height: 340px;
+}
+footer div{
+    padding: 45px 320px;
+    display: flex;
+    justify-content: space-between;
+}
+footer div img{
+    width: 226px;
+    height: 70px;
+}
+footer div ul{
+    width: 228px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer div ul img{
+    width: 42px;
+    height: 42px;
+}
