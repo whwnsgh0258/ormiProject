@@ -207,6 +207,7 @@ article{
     margin-top: 18px;
 }
 .modal_btn{
+    width: 530px;
     display: inline-block;
     margin: 69px 0 71px;
 }
