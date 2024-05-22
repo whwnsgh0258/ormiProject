@@ -38,3 +38,17 @@ const marker = new kakao.maps.Marker({
 
 // 마커가 지도 위에 표시되도록 설정합니다
 marker.setMap(map);
+
+const  modal = document.getElementById('modal_content');
+const modalBtn = document.getElementById('modal_create');
+
+modalBtn.onclick = function (){
+    modal.style.display = 'block';
+}
+
+// 모달 외부 클릭 시 모달 닫기
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
