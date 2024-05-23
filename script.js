@@ -43,7 +43,7 @@ const  modal = document.getElementById('modal_content');
 const modalBtn = document.getElementById('modal_create');
 
 modalBtn.onclick = function (){
-    modal.style.display = 'block';
+    modal.style.display = 'flex';
 }
 
 // 모달 외부 클릭 시 모달 닫기

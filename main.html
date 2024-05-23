@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style1024px.css">
 </head>
 <body>
 <header>
@@ -81,12 +82,11 @@
       <p class="sub_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         Lorem Ipsum has been the industry's standard dummy text </p>
     </div>
-    <div class="modal_btn">
-      <label for="email"></label>
-      <img src="img/mail.svg" alt="이메일">
+    <form class="modal_btn">
+      <label for="email"><img src="img/mail.svg" alt="이메일"></label>
       <input type="email" name="email" id="email" placeholder="Enter your e-mail address">
       <button id="modal_create">Subscribe</button>
-    </div>
+    </form>
   </article>
 </main>
 <aside>
@@ -95,13 +95,23 @@
 <footer>
     <img src="img/footer/footer_cat.png" alt="하단 고양이 사진">
   <div>
-    <img src="img/header/Logo-fin.svg" alt="하단로고">
-    <ul>
-      <li><img src="img/footer/블로그.png" alt="#"></li>
-      <li><img src="img/footer/인스타.png" alt="#"></li>
-      <li><img src="img/footer/페북.png" alt="#"></li>
-      <li><img src="img/footer/유튜브.png" alt="#"></li>
-    </ul>
+    <div class="bottom">
+      <img src="img/header/Logo-fin.svg" alt="하단로고">
+      <ul class="footer_nav_img">
+        <li><img src="img/footer/블로그.png" alt="#"></li>
+        <li><img src="img/footer/인스타.png" alt="#"></li>
+        <li><img src="img/footer/페북.png" alt="#"></li>
+        <li><img src="img/footer/유튜브.png" alt="#"></li>
+      </ul>
+    </div>
+    <nav class="footer_nav_text">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Team of Use</a></li>
+      </ul>
+    </nav>
   </div>
 </footer>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=dd743311d5b850c79af73989ca0f146f"></script>
