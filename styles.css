@@ -250,11 +250,9 @@ header h1, h2{
     /* 모달창*/
     #modal_content {
         display: none;
-        position: fixed;
+        position: relative;
         justify-content: center;
         z-index: 4; /* 모달을 화면의 맨 위에 배치 */
-        left: 0;
-        top: 0;
         width: 100%;
         height: 100%;
         overflow: auto; /* 필요한 경우 스크롤 */
@@ -300,22 +298,25 @@ header h1, h2{
         height: 340px;
         padding: 0;
     }
-    footer div {
+    footer .bottom{
         padding: 45px 16.5%;
+    }
+    .footer_nav{
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
     }
-    footer div img {
+    footer .footer_nav img {
         width: 226px;
         height: 70px;
     }
-    footer div ul {
+    footer .footer_nav ul {
         width: 228px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    footer div ul img {
+    footer .footer_nav ul img {
         width: 42px;
         height: 42px;
     }
