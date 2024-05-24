@@ -97,6 +97,7 @@ header h1, h2{
     main .top_sec img {
         width: 660px;
         height: 390px;
+        border-radius: 30px;
     }
     main .top_sec div {
         display: flex;
@@ -133,7 +134,7 @@ header h1, h2{
     main .list_sec .sub_text span {
         color: #D97652;
     }
-    main .list_sec ul {
+    main .list_sec .list-pic {
         width: 100%;
         margin: 88px 0;
         display: flex;
@@ -141,9 +142,11 @@ header h1, h2{
         flex-wrap: wrap;
         align-items: center;
     }
-    main .list_sec img {
+    main .list_sec .list-pic img {
         width: 378px;
         height: 378px;
+        border-radius: 30px;
+        margin-top: 72px;
     }
     main .list_sec .show_more {
         display: flex;

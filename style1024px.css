@@ -67,47 +67,52 @@
     /* 메인 영역 */
     /* 메인 섹션1 */
     main {
-        padding: 0 32px;
+        padding: 40px 32px 0;
     }
     main .top_sec {
         display: flex;
         flex-direction: column;
     }
+    main .top_sec img{
+        border-radius: 18px;
+    }
     main .top_sec div .main_text {
         white-space: pre-line;
-        font-weight: 700;
         font-size: 24px;
-        margin-left: 30px;
+        margin-top: 40px;
     }
     main .top_sec div .sub_text {
         white-space: pre-line;
         font-weight: 400;
         font-size: 16px;
-        margin-top: 30px;
-        margin-left: 30px;
+        margin-top: 40px;
     }
     /* 메인 센션 2(컨텐츠 리스트) */
     main .list_sec .main_text {
-        font-size: 48px;
+        font-size: 24px;
         text-align: center;
         color: #D97652;
         margin: 120px 0 80px;
+        font-weight: 700;
     }
     main .list_sec .sub_text {
         margin-top: 40px;
         text-align: center;
         white-space: pre-line;
+        font-weight: 400;
     }
     main .list_sec .sub_text span {
         color: #D97652;
     }
-    main .list_sec ul {
+    main .list_sec .list-pic {
         width: 100%;
         margin: 88px 0;
     }
     main .list_sec img {
         width: 100%;
-        height: 378px;
+        height: 326px;
+        margin-top: 18px;
+        border-radius: 18px;
     }
     main .list_sec .show_more {
         display: flex;
@@ -144,7 +149,6 @@
     main article {
         position: relative;
         padding: 0 58px;
-        width: 91%;
         top: 150px;
         background-color: #263140;
         border-radius: 30px;
