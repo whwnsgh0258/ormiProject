@@ -44,25 +44,28 @@ const mapContainer = document.getElementById('map'), // 지도를 표시할 div
 
 const map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
-// 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성합니다
-const mapTypeControl = new kakao.maps.MapTypeControl();
-
-// 지도 타입 컨트롤을 지도에 표시합니다
-map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
-
-// 지도타입 컨트롤의 지도 또는 스카이뷰 버튼을 클릭하면 호출되어 지도타입을 바꾸는 함수입니다
 function setMapType(maptype) {
     const roadmapControl = document.getElementById('btnRoadmap');
     const skyviewControl = document.getElementById('btnSkyview');
     if (maptype === 'roadmap') {
         map.setMapTypeId(kakao.maps.MapTypeId.ROADMAP);
         roadmapControl.className = 'selected_btn';
-        skyviewControl.className = 'btn';
+        skyviewControl.className = 'map_btn';
     } else {
         map.setMapTypeId(kakao.maps.MapTypeId.HYBRID);
         skyviewControl.className = 'selected_btn';
-        roadmapControl.className = 'btn';
+        roadmapControl.className = 'map_btn';
     }
+}
+
+// 지도 확대, 축소 컨트롤에서 확대 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
+function zoomIn() {
+    map.setLevel(map.getLevel() - 1);
+}
+
+// 지도 확대, 축소 컨트롤에서 축소 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
+function zoomOut() {
+    map.setLevel(map.getLevel() + 1);
 }
 
 
@@ -77,22 +80,27 @@ const marker = new kakao.maps.Marker({
 // 마커가 지도 위에 표시되도록 설정합니다
 marker.setMap(map);
 
-const  modal = document.getElementById('modal_content');
-const modalBtn = document.getElementById('modal_create');
 
-modalBtn.onclick = function (){
-    modal.style.display = 'block';
+
+// Get references to the modal and button elements
+const modal = document.getElementById('modal_content'); // Use getElementById
+const modalBtn = document.getElementById('modal_create'); // Use getElementById
+
+// Show modal when the button is clicked
+modalBtn.onclick = function(event) {
+    event.preventDefault(); // Prevent form submission if inside a form
+    modal.style.display = 'flex';
 }
 
-// 모달 외부 클릭 시 모달 닫기
+// Close modal when clicking outside of the modal content
 window.onclick = function(event) {
-    if (event.target == modal) {
+    if (event.target === modal) {
         modal.style.display = 'none';
     }
 }
 
 // 스크롤 버튼 누르면 최상단으로
-//
+
 const scroll = document.querySelector('.scroll_btn')
 
 scroll.addEventListener('click',function (){
@@ -102,11 +110,3 @@ scroll.addEventListener('click',function (){
     })
 })
 
-// const scrollToTopBtn = document.querySelector('.scroll_btn');
-//
-// scrollToTopBtn.addEventListener('click', function() {
-//     window.scrollTo({
-//         top: 0,
-//         behavior: 'smooth' // 부드럽게 스크롤
-//     });
-// });

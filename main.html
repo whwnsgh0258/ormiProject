@@ -64,6 +64,16 @@
     <h3>Where you’ll be</h3>
     <p>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
     <div id="map">
+      <!-- 지도 타입 변경 div -->
+      <div class="custom_typecontrol radius_border">
+        <span id="btnRoadmap" class="selected_btn" onclick="setMapType('roadmap')">지도</span>
+        <span id="btnSkyview" class="map_btn" onclick="setMapType('skyview')">스카이뷰</span>
+      </div>
+      <!-- 지도 확대 div -->
+      <div class="custom_zoomcontrol radius_border">
+        <span onclick="zoomIn()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png" alt="확대"></span>
+        <span onclick="zoomOut()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
+      </div>
     </div>
   </section>
   <div id="modal_content">
