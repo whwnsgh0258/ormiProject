@@ -87,17 +87,18 @@ const modal = document.getElementById('modal_content'); // Use getElementById
 const modalBtn = document.getElementById('modal_create'); // Use getElementById
 
 // Show modal when the button is clicked
-modalBtn.onclick = function(event) {
+modalBtn.addEventListener('click', function(event) {
     event.preventDefault(); // Prevent form submission if inside a form
     modal.style.display = 'flex';
-}
+});
 
 // Close modal when clicking outside of the modal content
-window.onclick = function(event) {
+window.addEventListener('click', function(event) {
     if (event.target === modal) {
         modal.style.display = 'none';
     }
-}
+});
+
 
 // 스크롤 버튼 누르면 최상단으로
 
