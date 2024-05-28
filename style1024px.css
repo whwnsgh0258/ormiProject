@@ -29,12 +29,6 @@
         width: 92px;
         height: 28px;
     }
-    .top .desktop_nav{
-        display: none;
-    }
-    .top .mobile_nav ul{
-        display: none;
-    }
     header section {
         display: flex;
         flex-direction: column;

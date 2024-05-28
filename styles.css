@@ -44,19 +44,16 @@ header h1, h2{
     header .top img {
         margin-top: 31px;
     }
-    header .top .desktop_nav {
+    header .top nav {
         display: flex;
         justify-content: space-between;
         height: 102px;
     }
-    header .top .desktop_nav ul {
+    header .top nav ul {
         width: 205px;
         display: flex;
         justify-content: space-between;
         margin: 41px 49px 0 0;
-    }
-    header .top .mobile_nav{
-        display: none;
     }
 
     /* 헤더영역 - section*/
