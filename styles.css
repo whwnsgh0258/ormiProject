@@ -21,7 +21,7 @@ header h1, h2{
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
-@media (min-width:1040px) {
+@media (min-width:1024px) {
     /* 헤더영역  - 상단*/
     header {
         background-color: #F2E9D8;
