@@ -31,7 +31,7 @@ async function fetchImages(page, limit) {
 
 function makeImageList(datas) {
     datas.forEach((data) => {
-        listPic.insertAdjacentHTML('beforeend', `<li class="img-width"><img src="${data.download_url}" alt=""></li>`);
+        listPic.insertAdjacentHTML('beforeend', `<li class="pic-img"><img src="${data.download_url}" alt=""></li>`);
     });
 }
 
