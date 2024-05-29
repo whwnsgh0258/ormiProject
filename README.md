@@ -57,8 +57,8 @@
 ├── main.html
 ├── ormiProject.iml
 ├── script.js
-├── style1024px.css
-└── styles.css
+├── mobile.css
+└── desktop.css
 ```
 
 ## 기능
