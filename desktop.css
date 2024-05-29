@@ -1,104 +1,133 @@
-@media (max-width:1024px){
-    body{
-        width: 100%;
-    }
+/* 전체영역 */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Pretendard;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+ul{
+    list-style-type: none;
+}
+h1, h2{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+@media (min-width:1024px) {
     /* 헤더영역  - 상단*/
-    header{
+    header {
         background-color: #F2E9D8;
+        height: 868px;
+        padding: 0 16.5% 0 16.5%;
     }
     header button {
         margin-top: 26px;
-        width: 114px;
-        height: 40px;
+        width: 140px;
+        height: 50px;
         border: none;
         border-radius: 40px;
         background-color: #D97652;
         color: #FFFFFF;
     }
-    .top{
-        height: 76px;
+    header .top {
         display: flex;
         justify-content: space-between;
     }
-    .top a{
-        margin: 24px 0 24px 20px ;
-        width: 92px;
-        height: 28px;
+    header .top img {
+        margin-top: 31px;
     }
-    .top a img{
-        width: 92px;
-        height: 28px;
+    header .top .desktop_nav {
+        display: flex;
+        justify-content: space-between;
+        height: 102px;
     }
+    header .top .desktop_nav ul {
+        width: 205px;
+        display: flex;
+        justify-content: space-between;
+        margin: 41px 49px 0 0;
+    }
+    .mobile_nav{
+        display: none;
+    }
+
+    /* 헤더영역 - section*/
     header section {
         display: flex;
-        flex-direction: column;
-        height: 718px;
-        align-items: center;
         justify-content: space-between;
     }
     header section .header_text {
-        margin-top: 40px;
-        padding: 0 17.18% 0 18.46%;
-        display: block;
-        text-align: center;
+        margin-top: 200px;
     }
     header section .header_text .main_text {
-        font-size: 24px;
+        font-size: 48px;
         font-weight: 700;
         white-space: pre-line;
-        line-height: 30px;
     }
     header section .header_text .sub_text {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
-        line-height: 18px;
         white-space: pre-line;
-        margin-top: 30px;
     }
     header section .header_text button {
-        margin-top: 30px;
+        margin-top: 40px;
     }
-    header section img{
-        height: 422px;
-        width: 197px;
-        margin-top: 18px;
+    header section img {
+        width: 22%;
+        height: 766px;
     }
+
+
     /* 메인 영역 */
     /* 메인 섹션1 */
     main {
-        padding: 40px 32px 0;
+        padding: 80px 16.5% 0 16.5%;
     }
     main .top_sec {
         display: flex;
-        flex-direction: column;
+        gap: 110px;
     }
-    main .top_sec img{
-        border-radius: 18px;
+    main .top_sec img {
+        width: 50%;
+        height: 390px;
+        border-radius: 30px;
+    }
+    main .top_sec div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
     main .top_sec div .main_text {
         white-space: pre-line;
-        font-size: 24px;
-        margin-top: 40px;
+        font-weight: 700;
+        font-size: 36px;
     }
     main .top_sec div .sub_text {
         white-space: pre-line;
         font-weight: 400;
         font-size: 16px;
-        margin-top: 40px;
+        margin-top: 30px;
     }
+
     /* 메인 센션 2(컨텐츠 리스트) */
     main .list_sec .main_text {
-        font-size: 24px;
+        font-size: 48px;
         text-align: center;
         color: #D97652;
         margin: 120px 0 80px;
-        font-weight: 700;
     }
     main .list_sec .sub_text {
         margin-top: 40px;
         text-align: center;
         white-space: pre-line;
-        font-weight: 400;
     }
     main .list_sec .sub_text span {
         color: #D97652;
@@ -106,16 +135,21 @@
     main .list_sec .list-pic {
         width: 100%;
         margin: 88px 0;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
     }
-    main .list_sec img {
-        width: 100%;
-        height: 326px;
-        margin-top: 18px;
-        border-radius: 18px;
+    main .list_sec .list-pic img {
+        width: 378px;
+        height: 378px;
+        border-radius: 30px;
+        margin-top: 72px;
     }
     main .list_sec .show_more {
         display: flex;
         flex-direction: column;
+        margin: 100px 495px 0;
         align-items: center;
     }
     main .list_sec #button {
@@ -133,6 +167,7 @@
         margin: 80px 0 68px;
         color: #C4C4C4;
     }
+
     /* 카카오맵(지도) 섹션 */
     main .map_sec h3 {
         font-size: 43px;
@@ -141,7 +176,7 @@
     main #map {
         margin-top: 48px;
         width: 100%;
-        height: 326px;
+        height: 520px;
         border-radius: 12px;
     }
     .radius_border{
@@ -195,7 +230,6 @@
     }
     .custom_zoomcontrol span {
         display:block;
-        width:36px;
         height:40px;
         text-align:center;
         cursor:pointer;
@@ -214,16 +248,19 @@
     main article {
         position: relative;
         padding: 0 58px;
+        width: 91%;
         top: 150px;
         background-color: #263140;
         border-radius: 30px;
-        z-index: 2;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
+        z-index: 2;
     }
     .modal {
-        margin: 36px 0 42px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 50px 0 51px;
     }
     .modal .main_text {
         font-size: 36px;
@@ -239,12 +276,14 @@
         margin-top: 18px;
     }
     .modal_btn {
+        justify-content: space-around;
         margin: 69px 0 71px;
+        width: 44.81%;
         height: 60px;
     }
     #email {
-        padding-left:13%;
-        width: 68%;
+        padding: 0 26% 0 12%;
+        width: 61.7%;
         height: 56px;
         border-radius: 60px;
         color: #767676;
@@ -254,36 +293,38 @@
     }
     .modal_btn img {
         position: relative;
-        left: 24px;
+        left: 4%;
         top: 16px;
-        width: 18px;
-        height: 18px;
+        width: 24px;
+        height: 24px;
         z-index: 1;
     }
     .modal_btn button {
         position: relative;
-        width: 135px;
+        bottom: 85px;
+        left: 74%;
+        width: 25.5%;
         height: 50px;
         border: none;
         border-radius: 40px;
-        left: 177px;
         background-color: #D97652;
         color: #FFFFFF;
-        /*    27.84%*/
+    /*    27.84%*/
     }
 
     /* 모달창*/
     #modal_content {
         display: none;
-        position: relative;
-        justify-content: center;
+        position: fixed;
         z-index: 4;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
-        overflow: auto; /* 필요한 경우 스크롤 */
-        background-color: rgba(0,0,0,0.4); /* 투명도 */
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4);
+        justify-content: center;
+        align-items: center;
     }
     #modal_content img {
         width: 600px;
@@ -326,38 +367,28 @@
         padding: 0;
     }
     footer .bottom{
+        padding: 45px 16.5%;
+    }
+    .footer_nav{
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
     }
-    footer div {
-        padding: 45px 21px 0 20px;
+    footer .footer_nav img {
+        width: 226px;
+        height: 70px;
     }
-    footer div img {
-        width: 112px;
-        height: 34px;
-    }
-    footer .footer_nav .footer_nav_img {
-        margin: 58px 0 24px;
+    footer .footer_nav ul {
         width: 228px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    footer .footer_nav .footer_nav_img img {
+    footer .footer_nav ul img {
         width: 42px;
         height: 42px;
     }
-    footer .footer_nav_text{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: space-evenly;
-        height: 213px;
-        width: 74px;
-    }
-    footer .footer_nav_text a{
-        color: #767676;
-        font-weight: 400;
-        font-size: 14px;
+    .footer_nav_text{
+        display: none;
     }
 }

@@ -1,3 +1,17 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // 모바일 메뉴를 토글하는 함수
+    const menu = document.querySelector('.menu_img');
+    const mobileMenu = document.querySelector('.mobile_menu');
+
+    menu.addEventListener('click', (event) => {
+        event.preventDefault();
+        if (mobileMenu.style.display === 'flex') {
+            mobileMenu.style.display = 'none';
+        } else {
+            mobileMenu.style.display = 'flex';
+        }
+    });
+});
 // list-sec 이미지
 const listPic = document.querySelector('.list-pic');
 const btn = document.querySelector('#button');
@@ -99,15 +113,15 @@ window.addEventListener('click', function(event) {
     }
 });
 
-
 // 스크롤 버튼 누르면 최상단으로
 
 const scroll = document.querySelector('.scroll_btn')
 
-scroll.addEventListener('click',function (){
+scroll.addEventListener('click',function () {
     window.scrollTo({
-        top:0,
-        behavior:"smooth"
-    })
-})
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
 
